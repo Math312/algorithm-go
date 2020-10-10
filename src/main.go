@@ -1,9 +1,22 @@
 package main
 
-import (
-	"algorithm/mysort/2_1/select_sort"
-)
+import "algorithm/leetcode/q199"
 
 func main() {
-	select_sort.PrintNumArray([]int{1,2})
+	root := q199.TreeNode{
+		Val: 1,
+		Left: &q199.TreeNode{
+			Val: 2,
+			Right: &q199.TreeNode{
+				Val: 5,
+			},
+		},
+		Right: &q199.TreeNode{
+			Val: 3,
+			Right: &q199.TreeNode{
+				Val: 4,
+			},
+		},
+	}
+	q199.RightSideView(&root)
 }
