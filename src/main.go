@@ -1,22 +1,15 @@
 package main
 
-import "algorithm/leetcode/q199"
+import (
+	"algorithm/leetcode/q131"
+)
 
 func main() {
-	root := q199.TreeNode{
-		Val: 1,
-		Left: &q199.TreeNode{
-			Val: 2,
-			Right: &q199.TreeNode{
-				Val: 5,
-			},
-		},
-		Right: &q199.TreeNode{
-			Val: 3,
-			Right: &q199.TreeNode{
-				Val: 4,
-			},
-		},
+	for _,data1 := range q131.Partition("") {
+		for _,data2 := range data1{
+			print(data2)
+			print(";")
+		}
+		println()
 	}
-	q199.RightSideView(&root)
 }
