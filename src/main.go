@@ -1,15 +1,10 @@
 package main
 
-import (
-	"algorithm/leetcode/q131"
-)
+import "algorithm/leetcode/q120"
 
 func main() {
-	for _,data1 := range q131.Partition("") {
-		for _,data2 := range data1{
-			print(data2)
-			print(";")
-		}
-		println()
-	}
+	print(q120.MinimumTotal([][]int{{2},
+		{3,4},
+	{6,5,7},
+	{4,1,8,3}}))
 }
