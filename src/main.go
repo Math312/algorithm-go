@@ -1,9 +1,9 @@
 package main
 
 import (
-	"algorithm/leetcode/q39"
+	"algorithm/leetcode/q39_bad"
 )
 
 func main() {
-	q39.CombinationSum([]int{2,3,6,7},7)
+	q39_bad.CombinationSum([]int{2,3,6,7},7)
 }

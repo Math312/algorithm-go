@@ -1,4 +1,4 @@
-package q39
+package q39_bad
 
 import (
 	"container/list"
